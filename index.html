@@ -141,12 +141,26 @@
      </div>
      <div class="flex items-center"><span class="font-semibold w-48">Evangelista:</span> <input type="text" id="evangelista" class="flex-1 border-b border-gray-600 ml-2 bg-transparent outline-none" placeholder="Data">
      </div>
-     <div class="flex items-center"><span class="font-semibold w-32">Igreja/Local:</span> <input type="text" id="evangelista-local" class="flex-1 border-b border-gray-600 ml-2 bg-transparent outline-none" placeholder="Nome da igreja">
-     </div>
+     <div class="flex items-center">
+  <span class="font-semibold w-48 whitespace-nowrap">Igreja/Local/Convenção:</span>
+  <input 
+    type="text" 
+    id="pastor-local" 
+    class="flex-1 border-b border-gray-600 ml-2 bg-transparent outline-none" 
+    placeholder="Nome da igreja"
+  >
+</div>
      <div class="flex items-center"><span class="font-semibold w-48">Pastor:</span> <input type="text" id="pastor" class="flex-1 border-b border-gray-600 ml-2 bg-transparent outline-none" placeholder="Data">
      </div>
-     <div class="flex items-center"><span class="font-semibold w-32">Igreja/Local:</span> <input type="text" id="pastor-local" class="flex-1 border-b border-gray-600 ml-2 bg-transparent outline-none" placeholder="Nome da igreja">
-     </div>
+     <div class="flex items-center">
+  <span class="font-semibold w-48 whitespace-nowrap">Igreja/Local/Convenção:</span>
+  <input 
+    type="text" 
+    id="pastor-local" 
+    class="flex-1 border-b border-gray-600 ml-2 bg-transparent outline-none" 
+    placeholder="Nome da igreja"
+  >
+</div>
     </div>
    </div><!-- Dados Cadastrais -->
    <div class="mb-6">
@@ -154,10 +168,24 @@
     <div class="space-y-2">
      <div class="flex items-center"><span class="font-semibold" style="min-width: 60px;">Nome:</span> <input type="text" id="nome" class="flex-1 border-b border-gray-600 ml-2 bg-transparent outline-none" placeholder="Nome completo">
      </div>
-     <div class="flex items-center"><span class="font-semibold" style="min-width: 60px;">Pai:</span> <input type="text" id="pai" class="flex-1 border-b border-gray-600 ml-2 bg-transparent outline-none" placeholder="Nome do pai">
-     </div>
-     <div class="flex items-center"><span class="font-semibold" style="min-width: 60px;">Mãe:</span> <input type="text" id="mae" class="flex-1 border-b border-gray-600 ml-2 bg-transparent outline-none" placeholder="Nome da mãe">
-     </div>
+     <div class="flex items-center flex-1">
+
+  <span class="font-semibold">Pai:</span>
+  <input 
+    type="text" 
+    id="instrucao" 
+    class="flex-1 border-b border-gray-600 ml-2 bg-transparent outline-none" 
+    placeholder="Nome do Pai">
+
+  <span class="font-semibold ml-6">Mãe:</span>
+  <input 
+    type="text" 
+    id="curso-teologico" 
+    class="flex-1 border-b border-gray-600 ml-2 bg-transparent outline-none" 
+    placeholder="Nome da Mãe">
+
+</div>
+
      <div class="flex items-center gap-4">
       <div class="flex items-center"><span class="font-semibold">Data de Nasc.:</span> <input type="text" id="data-nasc" class="border-b border-gray-600 ml-2 bg-transparent outline-none" style="width: 100px;" placeholder="dd/mm/aaaa">
       </div>
@@ -181,11 +209,7 @@
       </div>
      </div>
      <div class="flex items-center gap-4">
-      <div class="flex items-center flex-1"><span class="font-semibold">Cidade de Nascimento:</span> <input type="text" id="cidade-nasc" class="flex-1 border-b border-gray-600 ml-2 bg-transparent outline-none" placeholder="Cidade onde nasceu">
-      </div>
-      <div class="flex items-center"><span class="font-semibold">UF:</span> <input type="text" id="uf-nasc" class="border-b border-gray-600 ml-2 bg-transparent outline-none" style="width: 50px;" placeholder="SP">
-      </div>
-      <div class="flex items-center"><span class="font-semibold">Data de Nasc.:</span> <input type="text" id="data-nasc-2" class="border-b border-gray-600 ml-2 bg-transparent outline-none" style="width: 100px;" placeholder="dd/mm/aaaa">
+      <div class="flex items-center flex-1"><span class="font-semibold">Cidade e Estado de Nascimento:</span> <input type="text" id="cidade-nasc" class="flex-1 border-b border-gray-600 ml-2 bg-transparent outline-none" placeholder="Cidade onde nasceu">
       </div>
      </div>
      <div class="flex items-center gap-4">
@@ -195,7 +219,42 @@
       </div>
      </div>
     </div>
-   </div><!-- Endereço -->
+   </div><!-- Contatos/Telefones -->
+   <div class="mb-6">
+    <h2 class="text-lg font-bold mb-3 bg-gray-200 p-2">CONTATOS/TELEFONES</h2>
+    <div class="space-y-2">
+     <div class="flex items-center gap-4">
+      <div class="flex items-center">
+
+  <!-- Residencial -->
+  <span class="font-semibold">Res:</span>
+  <span class="ml-2 font-semibold">(</span>
+  <input type="text" id="tel-res-ddd" class="border-b border-gray-600 bg-transparent outline-none text-center" style="width: 30px;" placeholder="00">
+  <span class="font-semibold">)</span>
+  <input type="text" id="tel-res" class="border-b border-gray-600 ml-1 bg-transparent outline-none" style="width: 150px;" placeholder="0000-0000">
+
+  <!-- Celular -->
+  <span class="font-semibold ml-6">Cel:</span>
+  <span class="ml-2 font-semibold">(</span>
+  <input type="text" id="tel-cel-ddd" class="border-b border-gray-600 bg-transparent outline-none text-center" style="width: 30px;" placeholder="00">
+  <span class="font-semibold">)</span>
+  <input type="text" id="tel-cel" class="border-b border-gray-600 ml-1 bg-transparent outline-none" style="width: 150px;" placeholder="00000-0000">
+
+  <!-- Recados -->
+  <span class="font-semibold ml-6">Recados/Outros:</span>
+  <span class="ml-2 font-semibold">(</span>
+  <input type="text" id="tel-outros-ddd" class="border-b border-gray-600 bg-transparent outline-none text-center" style="width: 30px;" placeholder="00">
+  <span class="font-semibold">)</span>
+  <input type="text" id="tel-outros" class="border-b border-gray-600 ml-1 bg-transparent outline-none" style="width: 150px;" placeholder="0000-0000">
+
+</div>
+
+     </div>
+     </div>
+     <div class="flex items-center"><span class="font-semibold">Email:</span> <input type="email" id="email-contato" class="flex-1 border-b border-gray-600 ml-2 bg-transparent outline-none" placeholder="seu.email@exemplo.com">
+     </div>
+    </div>
+</div><!-- Endereço -->
    <div class="mb-6">
     <h2 id="address-title" class="text-lg font-bold mb-3 bg-gray-200 p-2">ENDEREÇO - RESIDÊNCIA</h2>
     <div class="space-y-2">
@@ -214,23 +273,6 @@
       </div>
       <div class="flex items-center"><span class="font-semibold">CEP:</span> <input type="text" id="cep" class="border-b border-gray-600 ml-2 bg-transparent outline-none" style="width: 120px;" placeholder="00000-000">
       </div>
-     </div>
-    </div>
-   </div><!-- Contatos/Telefones -->
-   <div class="mb-6">
-    <h2 class="text-lg font-bold mb-3 bg-gray-200 p-2">CONTATOS/TELEFONES</h2>
-    <div class="space-y-2">
-     <div class="flex items-center gap-4">
-      <div class="flex items-center"><span class="font-semibold">Res:</span> <span class="ml-2">(</span> <input type="text" id="tel-res-ddd" class="border-b border-gray-600 bg-transparent outline-none text-center" style="width: 30px;" placeholder="00"> <span>)</span> <input type="text" id="tel-res" class="border-b border-gray-600 ml-1 bg-transparent outline-none" style="width: 150px;" placeholder="0000-0000">
-      </div>
-      <div class="flex items-center"><span class="font-semibold ml-4">Cel:</span> <span class="ml-2">(</span> <input type="text" id="tel-cel-ddd" class="border-b border-gray-600 bg-transparent outline-none text-center" style="width: 30px;" placeholder="00"> <span>)</span> <input type="text" id="tel-cel" class="border-b border-gray-600 ml-1 bg-transparent outline-none" style="width: 150px;" placeholder="00000-0000">
-      </div>
-     </div>
-     <div class="flex items-center gap-4">
-      <div class="flex items-center flex-1"><span class="font-semibold">Recados/Outros:</span> <span class="ml-2">(</span> <input type="text" id="tel-outros-ddd" class="border-b border-gray-600 bg-transparent outline-none text-center" style="width: 30px;" placeholder="00"> <span>)</span> <input type="text" id="tel-outros" class="border-b border-gray-600 ml-1 bg-transparent outline-none" style="width: 150px;" placeholder="0000-0000">
-      </div>
-     </div>
-     <div class="flex items-center"><span class="font-semibold">Email:</span> <input type="email" id="email-contato" class="flex-1 border-b border-gray-600 ml-2 bg-transparent outline-none" placeholder="seu.email@exemplo.com">
      </div>
     </div>
    </div><!-- Termo LGPD -->
@@ -741,3 +783,4 @@
   </script>
  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99c793d43534b536',t:'MTc2Mjc5ODk2OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html> 
+
